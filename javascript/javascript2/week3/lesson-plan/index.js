@@ -8,12 +8,11 @@ let counter = 0
 
 button1.addEventListener("click", () => {
   counterContainer.textContent = counter
-  counter = counter + 1
 })
 
 button2.addEventListener("click", () => {
-  counterContainer.textContent = counter
   counter = counter + 1
+  counterContainer.textContent = counter
 })
 //===================================================================
 //Delay clicker

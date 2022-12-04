@@ -1,4 +1,4 @@
-window.movies = [
+const movies = [
   { title: "'71", year: 2014, rating: 7.2, votes: 41702, running_times: 5940 },
   {
     title: "'A' gai wak",
@@ -44615,6 +44615,18 @@ const highestRankedMovies = movies
 // console.log(highestRankedMovies)
 
 //6
+const keywords = ["surfer", "alien", "benjamin"]
+let total = 0
+const countMoviesWithKeywords = movies
+  .map((movie) => movie.title.toLowerCase())
+  .filter((title) => {
+    keywords.forEach((word) => {
+      if (title.includes(word)) {
+        total++
+      }
+    })
+  })
+console.log(total)
 
 //7
 

@@ -36,7 +36,7 @@ const showCurrentLocation = () => {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition)
   } else {
-    locationContainer.textContent = "Geolocatio service not supported."
+    locationContainer.textContent = "Geolocation service not supported."
   }
 }
 

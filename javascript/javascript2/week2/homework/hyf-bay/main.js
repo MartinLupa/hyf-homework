@@ -1,4 +1,6 @@
 let products = getAvailableProducts()
+import { myHelper } from "./helper"
+
 const productsUl = document.querySelector("section.products ul")
 const nameFilter = document.querySelector("#name-filter")
 const priceFilter = document.querySelector("#price-filter")
